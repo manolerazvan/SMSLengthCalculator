@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSLengthCalculator", "SMSLengthCalculator\SMSLengthCalculator.csproj", "{350249E9-1C1E-4AEA-941A-46385EA5DDE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{3D8222A3-5C67-484C-A8E1-6F78F915BAFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{1728CA2A-C62F-4C88-81AF-5C663F5CFD07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{350249E9-1C1E-4AEA-941A-46385EA5DDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350249E9-1C1E-4AEA-941A-46385EA5DDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350249E9-1C1E-4AEA-941A-46385EA5DDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350249E9-1C1E-4AEA-941A-46385EA5DDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D8222A3-5C67-484C-A8E1-6F78F915BAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D8222A3-5C67-484C-A8E1-6F78F915BAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D8222A3-5C67-484C-A8E1-6F78F915BAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D8222A3-5C67-484C-A8E1-6F78F915BAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1728CA2A-C62F-4C88-81AF-5C663F5CFD07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1728CA2A-C62F-4C88-81AF-5C663F5CFD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1728CA2A-C62F-4C88-81AF-5C663F5CFD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1728CA2A-C62F-4C88-81AF-5C663F5CFD07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A66B6A0-B15F-4793-BA0F-19B3C5B265E8}
+	EndGlobalSection
+EndGlobal
