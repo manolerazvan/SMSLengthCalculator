@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
 trigger:
-- main
+- none
 
 pool:
   vmImage: 'windows-latest'
@@ -34,6 +34,6 @@ steps:
     Destination: 'AzureBlob'
     storage: 'rmazcopydemo'
     ContainerName: 'rmcontainer'
-    BlobPrefix: 'Folder'
+    BlobPrefix: 'Folder/appsettings.json'
   name: AzureFileCopyGeoLite2Citymmdb
   displayName: 'Create and upload GeoLite2-City.mmdb file'
