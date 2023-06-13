@@ -27,7 +27,7 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: AzureFileCopy@4
+- task: AzureFileCopy@3
   inputs:
     SourcePath: 'D:\a\1\s\IntegrationTests\bin\Release\netcoreapp3.1\appsettings.json'
     azureSubscription: 'rrr'
