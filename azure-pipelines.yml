@@ -27,13 +27,13 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: AzureFileCopy@3
+- task: AzureFileCopy@4
   inputs:
     SourcePath: 'D:\a\1\s\IntegrationTests\bin\Release\netcoreapp3.1\appsettings.json'
     azureSubscription: 'rrr'
     Destination: 'AzureBlob'
     storage: 'rmazcopydemo'
     ContainerName: 'rmcontainer'
-    BlobPrefix: 'Folder'
+    BlobPrefix: 'RMFolder'
   name: AzureFileCopyGeoLite2Citymmdb
   displayName: 'Create and upload GeoLite2-City.mmdb file'
