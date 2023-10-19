@@ -30,7 +30,7 @@ steps:
 - task: AzureFileCopy@5
   inputs:
     SourcePath: 'D:\a\1\s\IntegrationTests\bin\Release\netcoreapp3.1'
-    azureSubscription: 'rrr'
+    azureSubscription: 'manolerazvan'
     Destination: 'AzureBlob'
     storage: 'rmazcopydemo'
     ContainerName: 'rmcontainer'
