@@ -37,12 +37,17 @@
 # #     BlobPrefix: 'RMFolder55/'
 # #   name: AzureFileCopyGeoLite2Citymmdb
 # #   displayName: 'Create and upload GeoLite2-City.mmdb file'
+# ADO YAML Hello World Pipeline with Variable Group
+
 trigger:
   - main
 
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+- group: VGtest
+
 steps:
-- script: echo "Hello, World!"
+- script: echo "Hello, ${{ variables.MySRT }}!"
   displayName: 'Print Hello World'
