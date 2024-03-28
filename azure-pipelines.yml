@@ -1,39 +1,48 @@
-# .NET Desktop
-# Build and run tests for .NET Desktop or Windows classic desktop solutions.
-# Add steps that publish symbols, save build artifacts, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+# # .NET Desktop
+# # Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# # Add steps that publish symbols, save build artifacts, and more:
+# # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
+# trigger:
+# - none
+
+# pool:
+#   vmImage: 'windows-latest'
+
+# variables:
+#   solution: '**/*.sln'
+#   buildPlatform: 'Any CPU'
+#   buildConfiguration: 'Release'
+
+# steps:
+# - task: NuGetToolInstaller@1
+
+# - task: NuGetCommand@2
+#   inputs:
+#     restoreSolution: '$(solution)'
+
+# - task: VSBuild@1
+#   inputs:
+#     solution: '$(solution)'
+#     platform: '$(buildPlatform)'
+#     configuration: '$(buildConfiguration)'
+
+# # - task: AzureFileCopy@5
+# #   inputs:
+# #     SourcePath: 'D:\a\1\s\IntegrationTests\bin\Release\netcoreapp3.1'
+# #     azureSubscription: 'RMDev (c00d16c7-6c1f-4c03-9be1-6934a4c49682)'
+# #     Destination: 'AzureBlob'
+# #     storage: 'rmazcopydemo'
+# #     ContainerName: 'rmcontainer'
+# #     BlobPrefix: 'RMFolder55/'
+# #   name: AzureFileCopyGeoLite2Citymmdb
+# #   displayName: 'Create and upload GeoLite2-City.mmdb file'
 trigger:
-- none
+  - main
 
 pool:
-  vmImage: 'windows-latest'
-
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+  vmImage: 'ubuntu-latest'
 
 steps:
-- task: NuGetToolInstaller@1
-
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '$(solution)'
-
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
-# - task: AzureFileCopy@5
-#   inputs:
-#     SourcePath: 'D:\a\1\s\IntegrationTests\bin\Release\netcoreapp3.1'
-#     azureSubscription: 'RMDev (c00d16c7-6c1f-4c03-9be1-6934a4c49682)'
-#     Destination: 'AzureBlob'
-#     storage: 'rmazcopydemo'
-#     ContainerName: 'rmcontainer'
-#     BlobPrefix: 'RMFolder55/'
-#   name: AzureFileCopyGeoLite2Citymmdb
-#   displayName: 'Create and upload GeoLite2-City.mmdb file'
+- script: echo "Hello, World!"
+  displayName: 'Print Hello World'
