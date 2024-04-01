@@ -1,0 +1,6 @@
+variables:
+  - group: VGtest
+
+steps:
+- script: echo "Hello, ${{ variables.MySRT }}!"
+  displayName: 'Print Hello World'
