@@ -1,6 +1,3 @@
-variables:
-  - template: es_variable_groups.yml
-
 steps:
 - script: echo "Hello, ${{ variables.MySRT }}!"
   displayName: 'Print Hello World'
