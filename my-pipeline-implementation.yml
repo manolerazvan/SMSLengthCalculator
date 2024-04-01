@@ -1,5 +1,5 @@
 variables:
-  - group: VGtest
+  - template: es_variable_groups.yml
 
 steps:
 - script: echo "Hello, ${{ variables.MySRT }}!"
