@@ -45,9 +45,12 @@ trigger:
 pool:
    vmImage: 'windows-latest'
 
-variables:
-- group: VGtest
+extends:
+  template: my-pipeline-implementation.yml
+  
+# variables:
+# - group: VGtest
 
-steps:
-- script: echo "Hello, ${{ variables.MySRT }}!"
-  displayName: 'Print Hello World'
+# steps:
+# - script: echo "Hello, ${{ variables.MySRT }}!"
+#   displayName: 'Print Hello World'
