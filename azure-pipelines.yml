@@ -45,8 +45,8 @@ trigger:
 pool:
    vmImage: 'windows-latest'
    
-# variables:
-#   - template: es_variable_groups.yml
+variables:
+  - template: es_variable_groups.yml
 
 extends:
   template: my-pipeline-implementation.yml
