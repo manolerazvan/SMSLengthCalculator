@@ -1,3 +1,10 @@
-steps:
-- script: echo "Hello, ${{ variables.MySRT }}!"
-  displayName: 'Print Hello World'
+stages:
+- stage: MyStage
+  variables: 
+    - template: es_variable_groups.yml
+  jobs: 
+    - job:
+     steps:
+       - script: echo "Hello, ${{ variables.MySRT }}!"
+         displayName: 'Print Hello World'
+  
