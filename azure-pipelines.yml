@@ -46,8 +46,8 @@ pool:
    vmImage: 'windows-latest'
    
 variables:
-  - group: 'VGtest'
-#  - template: es_variable_groups.yml
+#  - group: 'VGtest'
+  - template: es_variable_groups.yml
 
 extends:
   template: my-pipeline-implementation.yml
