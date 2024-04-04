@@ -46,13 +46,13 @@ pool:
    vmImage: 'windows-latest'
    
 stages:
-  - stage: Localize
-    displayName: 'ODSP-Web Touchdown Localization'
+  - stage: StageName
+    displayName: 'StageName'
     variables: 
     - group: VGtest
     jobs:
-      - job: LocalizeOdspWeb
-        displayName: 'Touchdown Localization (sans sp-client)'
+      - job: JobName
+        displayName: 'JobName'
         steps:
           - script: echo "Hello, ${{ variables.MySRT }}!"
             displayName: 'Print Hello World'
