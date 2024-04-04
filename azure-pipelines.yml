@@ -45,12 +45,24 @@ trigger:
 pool:
    vmImage: 'windows-latest'
    
+stages:
+  - stage: Localize
+    displayName: 'ODSP-Web Touchdown Localization'
+    variables: 
+    - group: VGtest
+    jobs:
+      - job: LocalizeOdspWeb
+        displayName: 'Touchdown Localization (sans sp-client)'
+        steps:
+          - script: echo "Hello, ${{ variables.MySRT }}!"
+            displayName: 'Print Hello World'
+            
 #variables:
 #  - group: 'VGtest'
 #  - template: es_variable_groups.yml
 
-extends:
-  template: my-pipeline-implementation.yml
+#extends:
+#  template: my-pipeline-implementation.yml
 
 
 # steps:
