@@ -47,12 +47,12 @@ pool:
    
 stages:
   - stage: StageName
-    displayName: 'StageName'
+    displayName: 'StageName1'
     variables: 
     - group: VGtest
     jobs:
       - job: JobName
-        displayName: 'JobName'
+        displayName: 'JobName1'
         steps:
           - script: echo "Hello, ${{ variables.MySRT }}!"
             displayName: 'Print Hello World'
