@@ -49,7 +49,7 @@ stages:
   - stage: StageName
     displayName: 'StageName'
     variables:
-      - group: VGtest
+    - group: VGtest
     jobs:
       - job: JobName
         displayName: 'JobName'
