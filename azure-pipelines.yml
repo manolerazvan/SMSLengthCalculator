@@ -64,9 +64,16 @@ stages:
         variables: 
           - group: VGtest1
         steps:
-          - script: echo "Hello, ${{ variables.MySRT }}!"
-            displayName: 'Print Hello World 2'
-                        
+        - task: AzurePowerShell@5
+          inputs:
+            azureSubscription: 'WIFSCTest1'
+            azurePowerShellVersion: LatestVersion
+            ScriptType: 'InlineScript'
+            Inline: |
+              # You can write your azure powershell scripts inline here. 
+              # You can also pass predefined and custom variables to this script using arguments
+              Write-Host 'Hello'
+              Write-Host 'World!'                        
    
 #stages:
 #  - stage: StageName
